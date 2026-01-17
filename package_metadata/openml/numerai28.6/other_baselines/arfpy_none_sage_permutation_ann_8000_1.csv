@@ -1,0 +1,6 @@
+mae,top_k,explanation_time,size,mmd,explainer,strategy,method,data_modification_method,kernel,g,num_bins,target_size,compression_time,unique_samples
+4.4880653929229916e-05,0.8,691.2286443710327,32,0.03651433986903041,sage,permutation,arfpy,none,Not needed,Not needed,Not needed,32,486.26257848739624,1
+2.0377753983957813e-05,1.0,2254.2587928771973,64,0.016351724756023422,sage,permutation,arfpy,none,Not needed,Not needed,Not needed,64,355.1746129989624,1
+1.3549820970227311e-05,0.8,3092.907775402069,128,0.008431253411925022,sage,permutation,arfpy,none,Not needed,Not needed,Not needed,128,725.7958080768585,1
+1.849016148376734e-05,0.8,6224.556294679642,256,0.005583667291510164,sage,permutation,arfpy,none,Not needed,Not needed,Not needed,256,595.7144246101379,1
+1.2600440430823864e-05,0.8,7785.532275438309,512,0.004169455256718857,sage,permutation,arfpy,none,Not needed,Not needed,Not needed,512,473.193279504776,1

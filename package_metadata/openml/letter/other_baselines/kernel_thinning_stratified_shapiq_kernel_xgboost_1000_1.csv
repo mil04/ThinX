@@ -1,0 +1,6 @@
+mae,top_k,explanation_time,size,mmd,explainer,strategy,method,data_modification_method,kernel,g,num_bins,target_size,compression_time,unique_samples
+0.005451918300377396,0.7432128906250001,42604.63927602768,26,0.06443007109709464,shapiq,kernel,kernel_thinning,stratified,Not needed,Not needed,Not needed,8,0.008184671401977539,26
+0.004298637342938515,0.79169921875,89089.44572639465,52,0.013845854620087694,shapiq,kernel,kernel_thinning,stratified,Not needed,Not needed,Not needed,16,0.011962890625,52
+0.003574106912850992,0.8436523437500001,177418.39831662178,104,0.00421622758436474,shapiq,kernel,kernel_thinning,stratified,Not needed,Not needed,Not needed,32,0.00994420051574707,104
+0.003235578820375215,0.86640625,352238.388689518,208,0.0020500573097713692,shapiq,kernel,kernel_thinning,stratified,Not needed,Not needed,Not needed,64,0.011482000350952148,207
+0.0029816722705031996,0.88046875,698492.6971116066,416,0.001118295799920399,shapiq,kernel,kernel_thinning,stratified,Not needed,Not needed,Not needed,128,0.009811639785766602,416

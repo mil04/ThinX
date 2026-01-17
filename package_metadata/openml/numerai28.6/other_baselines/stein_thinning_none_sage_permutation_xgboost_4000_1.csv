@@ -1,0 +1,6 @@
+mae,top_k,explanation_time,size,mmd,explainer,strategy,method,data_modification_method,kernel,g,num_bins,target_size,compression_time,unique_samples
+0.0002867258082636979,0.6,1043.7723634243011,32,0.0319761078164692,sage,permutation,stein_thinning,none,Not needed,Not needed,Not needed,32,0.37792444229125977,32
+0.00012943602800863916,0.6,3773.937604904175,64,0.01927578809057484,sage,permutation,stein_thinning,none,Not needed,Not needed,Not needed,64,1.078380823135376,64
+8.362661025350433e-05,0.8,7400.4414694309235,128,0.009787371808107848,sage,permutation,stein_thinning,none,Not needed,Not needed,Not needed,128,2.3290858268737793,128
+6.031155892116763e-05,0.8,10542.075998306274,256,0.0048648606295566554,sage,permutation,stein_thinning,none,Not needed,Not needed,Not needed,256,2.3956520557403564,256
+4.5332704005047345e-05,1.0,21444.567838191986,512,0.0013787712012475195,sage,permutation,stein_thinning,none,Not needed,Not needed,Not needed,512,5.359645366668701,512
