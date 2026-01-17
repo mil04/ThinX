@@ -33,4 +33,4 @@ package_metadata/
 ## Notes on Experimental Setup and Reproducibility
 
 - Each experiment was designed to run **10 repetitions**. Due to time limits imposed by the SLURM scheduler, repetitions were sometimes executed in **separate batches** (e.g., 1, 2, or 4 repetitions per job). This is reflected in the stored result files through the **random seed values** and the **number of repetitions** encoded in file names.
-- Memory requirements were **dataset-dependent**. For most datasets, memory limits were reduced to optimize cluster resource usage, while for certain datasets higher memory allocations were required. All memory configurations are explicitly specified in the corresponding SLURM job scripts.
+- Memory requirements were **dataset-dependent**. For most datasets, memory limits were reduced to optimize cluster resource usage, while for certain datasets higher memory allocations were required.
