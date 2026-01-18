@@ -80,6 +80,5 @@ metrics = evaluator.evaluate_explanation(exp_vals, exp_time, num_samples=X_bg.sh
 
 Repository Notes
 ----------------
-This package is part of a larger experimental codebase. It favors reproducibility
-and explicit configurations over high-level automation. See `thinx/utils.py`
-for helper functions and benchmark dataset IDs.
+Experiments on OpenML benchmarks (CC18 and CTR23)
+are available in the [`experiment-results`](../../tree/experiment-results) branch.
