@@ -358,7 +358,7 @@ class Preprocessor:
             compression_method (str): Name of the compression method to apply
                 Options: {"kernel_thinning", "stein_thinning", "influence", "arfpy", "iid"}
             data_modification_method (str): Modifying data method to apply before compression.
-                Options: {"none", "predictions", "stratified"}.
+                Options: {"none", "joined", "stratified"}.
             seed (int): Random seed.
         """
         if X is None or y is None:
@@ -373,11 +373,11 @@ class Preprocessor:
             raise ValueError(f"Unknown compression method: {compression_method}. "
                              f"Available methods: {available_compression_methods}.")
         
-        if data_modification_method not in {"none", "predictions", "stratified"}:
+        if data_modification_method not in {"none", "joined", "stratified"}:
             raise ValueError(f"Unknown data modification method: {data_modification_method}. "
-                             f"Available methods: {{'none', 'predictions', 'stratified'}}.")
+                             f"Available methods: {{'none', 'joined', 'stratified'}}.")
         
-        if data_modification_method in {"predictions", "stratified"} and model is None:
+        if data_modification_method in {"joined", "stratified"} and model is None:
             raise ValueError(f"Model must be provided for data modification method '{data_modification_method}'.")
         
         self.X = X
@@ -513,7 +513,7 @@ class Preprocessor:
         if self.data_modification_method in {"none", "stratified"}:
             X_mod, y_mod = self.X, self.y
 
-        elif self.data_modification_method == "predictions":
+        elif self.data_modification_method == "joined":
             X_mod, _ = self._data_with_predictions()
             y_mod = self.y
 
