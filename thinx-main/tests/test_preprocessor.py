@@ -173,7 +173,7 @@ def test_preprocess_none(monkeypatch, small_data):
 def test_preprocess_predictions(monkeypatch, small_data):
     X, y, model = small_data
     monkeypatch.setattr("thinx.preprocessor.resolve_kernel_params", lambda k, X: (b"gaussian", np.ones(2)))
-    pre = Preprocessor(X, y, model=model, compression_method="iid", data_modification_method="predictions")
+    pre = Preprocessor(X, y, model=model, compression_method="iid", data_modification_method="joined")
     monkeypatch.setattr(Preprocessor, "_dispatch_compression", lambda *a, **kw: (X[:2], y[:2], np.array([0, 1]), 0.2))
     Xr, yr, idx, t = pre.preprocess()
     assert Xr.shape[0] == 2
@@ -213,7 +213,7 @@ def test_predictions_mode_calls_predict_proba(monkeypatch, small_data):
         Preprocessor, "_dispatch_compression",
         lambda *a, **kw: (a[1][:2], a[2][:2], np.array([0,1]), 0.02)
     )
-    pre = Preprocessor(X, y, model=model, compression_method="iid", data_modification_method="predictions")
+    pre = Preprocessor(X, y, model=model, compression_method="iid", data_modification_method="joined")
     Xr, yr, idx, t = pre.preprocess()
 
     assert called["proba"]
